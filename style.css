@@ -72,36 +72,100 @@ p {
   align-items: center;
 }
 
-.navbar ul {
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.navbar-brand a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* Botón de menú hamburguesa */
+.navbar-toggle {
+  display: none; /* Oculto por defecto */
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.hamburger {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  position: relative;
+}
+
+.hamburger::before,
+.hamburger::after {
+  content: '';
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  position: absolute;
+  left: 0;
+}
+
+.hamburger::before {
+  top: -8px;
+}
+
+.hamburger::after {
+  top: 8px;
+}
+
+/* Menú desplegable */
+.navbar-menu {
   list-style: none;
   margin: 0;
   padding: 0;
   display: flex;
 }
 
-.navbar ul li {
+.navbar-menu li {
   margin-left: 20px;
 }
 
-.navbar ul li a {
+.navbar-menu li a {
   color: #fff;
   text-decoration: none;
   font-weight: bold;
 }
 
-.navbar ul li a:hover {
+.navbar-menu li a:hover {
   color: #f4f4f4;
 }
 
-/* Diseño responsivo para la barra de menú en móviles */
+/* Estilos responsivos para móviles */
 @media (max-width: 768px) {
-  .navbar ul {
-    flex-direction: column;
-    align-items: center;
+  .navbar-toggle {
+    display: block; /* Mostrar el botón en móviles */
   }
 
-  .navbar ul li {
+  .navbar-menu {
+    display: none; /* Ocultar el menú por defecto en móviles */
+    flex-direction: column;
+    width: 100%;
+    background-color: rgba(26, 188, 156, 0.9);
+    position: absolute;
+    top: 60px; /* Ajusta según la altura de tu navbar */
+    left: 0;
+  }
+
+  .navbar-menu.active {
+    display: flex; /* Mostrar el menú cuando esté activo */
+  }
+
+  .navbar-menu li {
     margin: 10px 0;
+    text-align: center;
   }
 }
 
@@ -259,5 +323,4 @@ p {
     justify-content: center; /* Centrar las cards */
   }
 }
-
 
