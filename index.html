@@ -1,72 +1,102 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <!-- 
-      This is an HTML comment
-      You can write text in a comment and the content won't be visible in the page
-    -->
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Landing page de bienestar físico, salud y mental. Descubre productos que transformarán tu vida.">
+  <title>Bienestar Integral - Salud Física y Mental</title>
+  <!-- Enlace a tu archivo CSS (lo agregaremos después) -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Encabezado -->
+  <header class="header">
+    <div class="container">
+      <h1>Bienestar Integral</h1>
+      <p>Transforma tu vida con productos diseñados para tu salud física y mental.</p>
+      <a href="#productos" class="btn">Explora los productos</a>
+    </div>
+  </header>
 
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="icon" href="https://glitch.com/favicon.ico" />
+  <!-- Sección de Introducción -->
+  <section class="intro">
+    <div class="container">
+      <h2>¿Por qué elegirnos?</h2>
+      <p>En Bienestar Integral, nos enfocamos en ofrecerte los mejores productos para mejorar tu calidad de vida. Desde suplementos naturales hasta herramientas para tu bienestar mental, todo está aquí.</p>
+    </div>
+  </section>
 
-    <!--
-      This is the page head - it contains info the browser uses
-      Like the title, which appears on the browser tab but not inside the page
-      Further down you'll see the content that displays in the page
-    -->
-    <title>Hello World!</title>
-
-    <!-- The website stylesheet -->
-    <link rel="stylesheet" href="/style.css" />
-
-    <!-- The website JavaScript file -->
-    <script src="/script.js" defer></script>
-  </head>
-  <body>
-    <!--
-      The body includes the content you see in the page
-      Each element is defined using tags, like this <div></div>
-      The attributes like class="wrapper" let us style elements in the CSS
-    -->
-    <div class="wrapper">
-      <div class="content" role="main">
-        <h1 class="title">Hello World!</h1>
-        <img
-          src="https://cdn.glitch.com/a9975ea6-8949-4bab-addb-8a95021dc2da%2Fillustration.svg?v=1618177344016"
-          class="illustration"
-          alt="Editor illustration"
-          title="Click the image!"
-        />
-        <div class="instructions">
-          <h2>Using this project</h2>
-          <p>
-            This is the Glitch <strong>Hello Website</strong> project. You can
-            use it to build your own site. Check out the code in the editor and open
-            the <span class="fileopener" data-file="TODO.md" data-line="0"
-              >TODO</span> for next steps!
-          </p>
-          <!--  🚧 TODO: ADD BUTTON HERE -->
-
-          <!-- Once you've added the button from TODO.md, click it in the page -->
-          <!-- Check out the function in script.js to see how it works -->
+  <!-- Sección de Productos -->
+  <section id="productos" class="productos">
+    <div class="container">
+      <h2>Nuestros Productos Destacados</h2>
+      <div class="productos-grid">
+        <!-- Producto 1 -->
+        <div class="producto">
+          <img src="https://via.placeholder.com/300" alt="Producto 1">
+          <h3>Suplemento Natural</h3>
+          <p>Mejora tu energía y vitalidad con este suplemento 100% natural.</p>
+          <a href="[Enlace de afiliado]" class="btn" target="_blank">Comprar ahora</a>
+        </div>
+        <!-- Producto 2 -->
+        <div class="producto">
+          <img src="https://via.placeholder.com/300" alt="Producto 2">
+          <h3>Libro de Meditación</h3>
+          <p>Aprende técnicas de meditación para reducir el estrés y mejorar tu enfoque.</p>
+          <a href="[Enlace de afiliado]" class="btn" target="_blank">Comprar ahora</a>
+        </div>
+        <!-- Producto 3 -->
+        <div class="producto">
+          <img src="https://via.placeholder.com/300" alt="Producto 3">
+          <h3>Kit de Yoga</h3>
+          <p>Todo lo que necesitas para comenzar tu práctica de yoga en casa.</p>
+          <a href="[Enlace de afiliado]" class="btn" target="_blank">Comprar ahora</a>
         </div>
       </div>
     </div>
-    <!-- The footer holds our remix button — you can keep or delete it ✂ -->
-    <footer class="footer">
-      <div class="links"></div>
-      <a
-        class="btn--remix"
-        target="_top"
-        href="https://glitch.com/edit/#!/remix/glitch-hello-website"
-      >
-        <img
-          src="https://cdn.glitch.com/605e2a51-d45f-4d87-a285-9410ad350515%2FLogo_Color.svg?v=1618199565140"
-          alt=""
-        />
-        Remix on Glitch
-      </a>
-    </footer>
-  </body>
+  </section>
+
+  <!-- Sección de Testimonios -->
+  <section class="testimonios">
+    <div class="container">
+      <h2>Lo que dicen nuestros clientes</h2>
+      <div class="testimonios-grid">
+        <!-- Testimonio 1 -->
+        <div class="testimonio">
+          <p>"El suplemento natural cambió mi vida. ¡Me siento con más energía que nunca!"</p>
+          <span>- María G.</span>
+        </div>
+        <!-- Testimonio 2 -->
+        <div class="testimonio">
+          <p>"El libro de meditación me ayudó a manejar mi estrés de manera efectiva."</p>
+          <span>- Juan P.</span>
+        </div>
+        <!-- Testimonio 3 -->
+        <div class="testimonio">
+          <p>"El kit de yoga es perfecto para principiantes. ¡Lo recomiendo!"</p>
+          <span>- Ana L.</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Llamado a la Acción (CTA) -->
+  <section class="cta">
+    <div class="container">
+      <h2>¡Comienza tu viaje hacia el bienestar hoy!</h2>
+      <a href="#productos" class="btn">Ver todos los productos</a>
+    </div>
+  </section>
+
+  <!-- Pie de página -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2023 Bienestar Integral. Todos los derechos reservados.</p>
+      <p>
+        <a href="#">Política de privacidad</a> | 
+        <a href="#">Términos y condiciones</a>
+      </p>
+    </div>
+  </footer>
+</body>
 </html>
