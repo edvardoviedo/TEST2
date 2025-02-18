@@ -247,3 +247,17 @@ p {
 .footer a:hover {
   text-decoration: underline;
 }
+
+/* Media Query para dispositivos móviles */
+@media (max-width: 768px) {
+  .producto, .testimonio {
+    flex: 1 1 calc(100% - 40px); /* Cada card ocupa el 100% del ancho con margen entre ellas */
+    margin-bottom: 20px;
+  }
+
+  .productos-grid, .testimonios-grid {
+    justify-content: center; /* Centrar las cards */
+  }
+}
+
+
